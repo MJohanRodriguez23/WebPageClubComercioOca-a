@@ -194,6 +194,18 @@
             object-fit: cover;
         }
 
+        #whatsapp img{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: #fff;
+    border-radius: 80%;
+    cursor: pointer;
+    font-family: Arial,Helvetica,sans-serif;
+    z-index: 999;
+    width: 60px;
+}
+
         /* Responsive para dispositivos móviles */
         @media (max-width: 991px) {
             .service {
@@ -234,6 +246,12 @@
             </nav>
         </div>
     </header>
+
+    <div id="whatsapp">
+        <a target="_blank" href="https://web.whatsapp.com/">
+            <img src="images/Whatsapp.png"/>
+        </a>
+    </div>
 
     <!-- SECCIÓN DE SERVICIOS -->
     <section class="services-detail">
@@ -302,7 +320,7 @@
             </div>
 
             <!-- Agrega más servicios aquí según sea necesario -->
-            <a href="#" class="btn-1">Ver más detalles de servicios</a>
+            <a href="#" class="btn-1">Ver más detalles de eventos</a>
         </div>
     </section>
 

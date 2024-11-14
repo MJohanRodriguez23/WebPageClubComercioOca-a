@@ -353,6 +353,18 @@ p {
     height: 24px;
 }
 
+#whatsapp img{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: #fff;
+    border-radius: 80%;
+    cursor: pointer;
+    font-family: Arial,Helvetica,sans-serif;
+    z-index: 999;
+    width: 60px;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
