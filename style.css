@@ -395,7 +395,7 @@ p {
 }
 
 /* Media Queries para Responsividad */
-@media(max-width: 991px) {
+@media(max-width:991px) {
 
     /* Menú de navegación en pantallas pequeñas */
     .menu {
@@ -423,9 +423,8 @@ p {
         display: initial;
     }
 
-    /* Estilo del Header en pantallas pequeñas */
     .header {
-        min-height: 50vh;  /* Reduce la altura */
+        min-height: 0vh;  /* Reduce la altura */
     }
 
     .header-content {
@@ -446,61 +445,116 @@ p {
     }
 
     .coffee-content h2 {
+        padding: 0;
+        font-size: 55px;
+    }
+    .txt-p {
+        padding: 0;
         font-size: 45px;
     }
 
     .coffee-group {
         flex-direction: column;
+        margin-bottom: 0;
+    }
+    .coffee-img {
+        display: none;
+    }
+    .services {
+        padding: 30px;
         justify-content: center;
     }
 
-    .coffee-1 {
-        text-align: center;
-        padding: 15px;
+    .services-content h2 {
+        font-size: 45px;
     }
 
+    .services-content p {
+        padding: 0;
+
+    }
     .coffee-1 img {
         width: 100%; /* Asegura que las imágenes sean responsivas */
         max-width: 200px;
     }
+    .services-group {
+        flex-direction: column;
+        margin-bottom: 0;
 
+    }
     .coffee-1 h3 {
         font-size: 18px;
     }
 
+    .services-1 {
+        margin-bottom: 25px;
+    }
     /* Estilo del Footer */
     .footer {
         padding: 30px;
     }
 
-    .footer-container {
+    .general {
         flex-direction: column;
+    }
+    .general-1 {
+        width: 100%;
+        padding: 30px;
         text-align: center;
     }
 
+    .general-1 h2 {
+        font-size: 45px;
+    }
+   
+    .general-2, .general-3 {
+        display: none;
+
+    }
     .footer-section {
         padding: 10px;
     }
 
+    .blog {
+        padding: 30px;
+
+    }
     .footer-section ul {
         padding: 0;
         list-style: none;
     }
 
+    .blog-content {
+        flex-direction: column;
+
+    }
     .footer-section ul li {
         margin-bottom: 5px;
     }
 
+    .blog-1 {
+        padding: 0;
+
+    }
     /* Asegura que los enlaces sean legibles en pantallas más pequeñas */
     .footer-section ul li a {
         color: #f0f0f0;
         font-size: 14px;
     }
 
+    .footer {
+        padding: 30px;
+
+    }
     .footer-section ul li a:hover {
         text-decoration: underline;
     }
 
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+
+    }
     .gallery {
         display: grid;  /* Usamos grid para crear columnas */
         grid-template-columns: repeat(2, 1fr);  /* 2 columnas de igual tamaño */
