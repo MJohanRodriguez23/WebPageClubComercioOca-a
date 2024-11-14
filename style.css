@@ -50,6 +50,13 @@ body {
     font-weight: 800;
 }
 
+.logo-img {
+    width: 75px; /* Tamaño pequeño y estético */
+    height: auto;
+    margin-right: 18px; /* Espacio entre el logo y el texto */
+    vertical-align: middle; /* Centrado vertical con el texto */
+}
+
 .menu .navbar ul li {
     position: relative;
     float: left;
@@ -79,7 +86,6 @@ body {
     cursor: pointer;
     display: none;
 }
-
 
 .header-content {
     text-align: center;
@@ -285,80 +291,79 @@ p {
     background-color: #1a1a2e;
     color: #f0f0f0;
     padding: 20px 0;
-  }
-  
-  .footer-container {
+}
+
+.footer-container {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-  }
-  
-  .footer-section {
+}
+
+.footer-section {
     flex: 1;
     padding: 10px;
-  }
-  
-  .footer-section h5 {
+}
+
+.footer-section h5 {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  .footer-section hr {
+}
+
+.footer-section hr {
     width: 50px;
     height: 2px;
     background-color: #f0f0f0;
     border: none;
     margin-bottom: 15px;
-  }
-  
-  .footer-section p,
-  .footer-section ul {
+}
+
+.footer-section p,
+.footer-section ul {
     font-size: 14px;
-  }
-  
-  .footer-section ul {
+}
+
+.footer-section ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .footer-section ul li {
+}
+
+.footer-section ul li {
     margin-bottom: 5px;
-  }
-  
-  .footer-section ul li a {
+}
+
+.footer-section ul li a {
     color: #f0f0f0;
     text-decoration: none;
-  }
-  
-  .footer-section ul li a:hover {
+}
+
+.footer-section ul li a:hover {
     text-decoration: underline;
-  }
-  
-  .social-icons a {
+}
+
+.social-icons a {
     display: inline-block;
     margin-right: 10px;
-  }
-  
-  .social-icons img {
+}
+
+.social-icons img {
     width: 24px;
     height: 24px;
-  }
-  
-  .gallery {
+}
+
+.gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-  }
-  
-  .gallery a img {
+}
+
+.gallery a img {
     width: 50px;
     height: 50px;
     object-fit: cover;
-  }
-  
+}
 
 .link h3 {
     font-size: 18px;
@@ -377,8 +382,10 @@ p {
     color: #e1e2e6;
 }
 
-@media(max-width:991px){
-    
+/* Media Queries para Responsividad */
+@media(max-width: 991px) {
+
+    /* Menú de navegación en pantallas pequeñas */
     .menu {
         padding: 30px;
     }
@@ -400,13 +407,13 @@ p {
         width: 100%;
     }
 
-    
     #menu:checked ~ .navbar {
         display: initial;
     }
 
+    /* Estilo del Header en pantallas pequeñas */
     .header {
-        min-height: 0vh;
+        min-height: 50vh;  /* Reduce la altura */
     }
 
     .header-content {
@@ -421,86 +428,79 @@ p {
         padding: 0;
     }
 
+    /* Sección de servicios */
     .coffee {
         padding: 30px;
     }
 
     .coffee-content h2 {
-        padding: 0;
-        font-size: 55px;
-    }
-
-    .txt-p {
-        padding: 0;
+        font-size: 45px;
     }
 
     .coffee-group {
         flex-direction: column;
-        margin-bottom: 0;
+        justify-content: center;
     }
 
-    .coffee-img {
-        display: none;
-    }
-
-    .services {
-        padding: 30px;
-    }
-
-    .services-content h2 {
-        font-size: 45px;
-    }
-
-    .services-content p {
-        padding: 0;
-    }
-
-    .services-group {
-        flex-direction: column;
-        margin-bottom: 0;
-    }
-
-    .services-1 {
-        margin-bottom: 25px;
-    }
-
-    .general {
-        flex-direction: column;
-    }
-
-    .general-1 {
-        width: 100%;
-        padding: 30px;
+    .coffee-1 {
         text-align: center;
+        padding: 15px;
     }
 
-    .general-1 h2 {
-        font-size: 45px;
-    }
-   
-    .general-2, .general-3 {
-        display: none;
+    .coffee-1 img {
+        width: 100%; /* Asegura que las imágenes sean responsivas */
+        max-width: 200px;
     }
 
-    .blog {
-        padding: 30px;
+    .coffee-1 h3 {
+        font-size: 18px;
     }
 
-    .blog-content {
-        flex-direction: column;
-    }
-
-    .blog-1 {
-        padding: 0;
-    }
-
+    /* Estilo del Footer */
     .footer {
         padding: 30px;
     }
 
-    .footer-content {
+    .footer-container {
         flex-direction: column;
         text-align: center;
     }
 
+    .footer-section {
+        padding: 10px;
+    }
+
+    .footer-section ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 5px;
+    }
+
+    /* Asegura que los enlaces sean legibles en pantallas más pequeñas */
+    .footer-section ul li a {
+        color: #f0f0f0;
+        font-size: 14px;
+    }
+
+    .footer-section ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .gallery {
+        display: grid;  /* Usamos grid para crear columnas */
+        grid-template-columns: repeat(2, 1fr);  /* 2 columnas de igual tamaño */
+        gap: 10px;  /* Espacio entre las imágenes */
+        justify-items: center;  /* Centra las imágenes dentro de las celdas */
+        padding: 10px 0;
+    }
+    
+    .gallery a img {
+        width: 100%;  /* Las imágenes ocupan todo el ancho disponible en su celda */
+        height: 100%;
+        object-fit: cover;  /* Asegura que las imágenes se recorten adecuadamente */
+        border-radius: 8px;  /* Borde redondeado para las imágenes */
+    }
 }

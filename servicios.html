@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Club del Comercio Ocaña</title>
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* HEADER */
+        .header {
+            background-color: #221552;
+            color: #FFFDFC;
+            padding: 20px 0;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #FFFDFC;
+            font-weight: 600;
+        }
+
+        .menu a:hover {
+            color: #3e288f;
+        }
+
+        /* SECCIÓN DE SERVICIOS */
+        .services-detail {
+            padding: 80px 0;
+            background-color: #f9fafc;
+        }
+
+        .services-detail h2 {
+            text-align: center;
+            font-size: 55px;
+            color: #323337;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+
+        .service {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .service img {
+            width: 40%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .service-description {
+            width: 55%;
+        }
+
+        .service-description h3 {
+            font-size: 30px;
+            color: #323337;
+            margin-bottom: 15px;
+        }
+
+        .service-description p {
+            font-size: 16px;
+            color: #414247;
+        }
+
+        .btn-1 {
+            display: inline-block;
+            padding: 11px 35px;
+            background-color: #221552;
+            color: #f9fafc;
+            text-transform: uppercase;
+            border-radius: 15px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .btn-1:hover {
+            background-color: #3e288f;
+        }
+
+        /* FOOTER */
+        .footer {
+            background-color: #1a1a2e;
+            color: #f0f0f0;
+            padding: 20px 0;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .footer-section h5 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .footer-section hr {
+            width: 50px;
+            height: 2px;
+            background-color: #f0f0f0;
+            border: none;
+            margin-bottom: 15px;
+        }
+
+        .footer-section p,
+        .footer-section ul {
+            font-size: 14px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer-section ul li a {
+            color: #f0f0f0;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery a img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+
+        /* Responsive para dispositivos móviles */
+        @media (max-width: 991px) {
+            .service {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .service img {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .service-description {
+                width: 100%;
+            }
+
+            .services-detail h2 {
+                font-size: 45px;
+            }
+
+            .btn-1 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Club del Comercio</a>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="#">Galería</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN DE SERVICIOS -->
+    <section class="services-detail">
+        <div class="container">
+            <h2>Servicios Disponibles</h2>
+
+            <!-- Servicio Sala de Bolos -->
+            <div class="service">
+                <img src="images/service1.jpeg" alt="Servicio Sala de Bolos" />
+                <div class="service-description">
+                    <h3>Sala de Bolos</h3>
+                    <p>
+                        La Sala de Bolos del Club del Comercio ofrece un espacio moderno y
+                        divertido para jugadores de todos los niveles. Con un ambiente
+                        familiar, ideal para disfrutar de este emocionante deporte con
+                        amigos o familiares.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Servicio Piscina Grande -->
+            <div class="service">
+                <img src="images/service2.jpeg" alt="Servicio Piscina Grande" />
+                <div class="service-description">
+                    <h3>Piscina Grande</h3>
+                    <p>
+                        Nuestra piscina grande es el lugar ideal para relajarte y disfrutar
+                        de un día al aire libre. Perfecta para nadar, tomar el sol y pasar
+                        un día increíble en familia o con amigos.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Servicio Piscina Pequeña -->
+            <div class="service">
+                <img src="images/service3.jpeg" alt="Servicio Piscina Pequeña" />
+                <div class="service-description">
+                    <h3>Piscina Pequeña</h3>
+                    <p>
+                        La piscina infantil está diseñada para proporcionar diversión y
+                        seguridad a los más pequeños. Ideal para niños que desean disfrutar
+                        del agua en un entorno controlado.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Servicio Bar -->
+            <div class="service">
+                <img src="images/bar.jpg" alt="Servicio Bar" />
+                <div class="service-description">
+                    <h3>Bar</h3>
+                    <p>
+                        Disfruta de una amplia variedad de bebidas refrescantes y cócteles
+                        en nuestro moderno bar. Perfecto para relajarte después de un día
+                        lleno de actividades, o para socializar con amigos en un ambiente
+                        cómodo y amigable.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Servicio Sauna -->
+            <div class="service">
+                <img src="images/sauna.jpg" alt="Servicio Sauna" />
+                <div class="service-description">
+                    <h3>Sauna</h3>
+                    <p>
+                        Relájate y desconéctate en nuestro sauna. El lugar ideal para liberar
+                        el estrés, mejorar la circulación y disfrutar de una experiencia de
+                        bienestar total.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Agrega más servicios aquí según sea necesario -->
+            <a href="#" class="btn-1">Ver más detalles de servicios</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h5>CLUB DEL COMERCIO OCAÑA</h5>
+                <hr>
+                <p>Calle X # Y - Z<br>Ocaña, Norte de Santander<br>PBX: (+57) 316 810 8618</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61550799392922&mibextid=kFxxJD"><img
+                            src="https://images.vexels.com/media/users/3/223136/isolated/lists/984f500cf9de4519b02b354346eb72e0-icono-de-facebook-redes-sociales.png"
+                            alt="Facebook"></a>
+                    <a href="https://www.instagram.com/clubcomercioocana/profilecard/?igsh=NW5ncmpzeDM4djY="><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/640px-Instagram_logo_2022.svg.png"
+                            alt="Instagram"></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h5>MAPA DEL SITIO</h5>
+                <hr>
+                <ul>
+                    <li><a href="#">Acerca de Nosotros</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">El Club</a></li>
+                    <li><a href="#">Deportes</a></li>
+                    <li><a href="#">Hospedaje</a></li>
+                    <li><a href="#">Bodas</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h5>GALERÍA DE IMÁGENES</h5>
+                <hr>
+                <div class="gallery">
+                    <a href="#"><img src="images/slide1.jpeg" alt="Imagen 1"></a>
+                    <a href="#"><img src="images/slide2.jpeg" alt="Imagen 2"></a>
+                    <a href="#"><img src="images/slide3.jpeg" alt="Imagen 3"></a>
+                    <a href="#"><img src="images/service3.jpeg" alt="Imagen 4"></a>
+                    <a href="#"><img src="images/service2.jpeg" alt="Imagen 5"></a>
+                    <a href="#"><img src="images/slide2.jpeg" alt="Imagen 6"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

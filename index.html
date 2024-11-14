@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Club del comercio Ocaña</title>
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -12,7 +13,10 @@
 <body>
     <header class="header">
         <div class="menu container">
-            <a href="#" class="logo">Club del comercio Ocaña</a>
+            <a href="#" class="logo">
+                <img src="images/logo.jpg" alt="Logo Club del Comercio Ocaña" class="logo-img">
+                Club del Comercio Ocaña
+            </a>
             <input type="checkbox" id="menu" />
             <label for="menu">
                 <img src="images/menu.png" alt="" class="menu-icono">
@@ -22,7 +26,7 @@
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#history">Historia</a></li>
-                    <li><a href="#">Eventos</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
                     <li><a href="#">Convenios</a></li>
                     <li><a href="#footer">Contacto</a></li>
                 </ul>
@@ -75,7 +79,7 @@
                     </p>
                 </div>
             </div>
-            <a href="#" class="btn-1">Informacion</a>
+            <a href="servicios.html" class="btn-1">Conocer Mas</a>
         </div>
     </section>
     <main id="history" class="services">
@@ -154,11 +158,10 @@
            <div class="footer-section">
             <h5>CLUB DEL COMERCIO OCAÑA</h5>
             <hr>
-            <p>Calle X # Y - Z<br>Ocaña, Norte de Santander<br>PBX: (+57) 300 123 4567</p>
+            <p>Calle X # Y - Z<br>Ocaña, Norte de Santander<br>PBX: (+57) 316 810 8618</p>
             <div class="social-icons">
-              <a href="#"><img src="https://images.vexels.com/media/users/3/223136/isolated/lists/984f500cf9de4519b02b354346eb72e0-icono-de-facebook-redes-sociales.png" alt="Facebook"></a>
-              <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/640px-Instagram_logo_2022.svg.png" alt="Instagram"></a>
-              <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/031/737/215/non_2x/twitter-new-logo-twitter-icons-new-twitter-logo-x-2023-x-social-media-icon-free-png.png" alt="Twitter"></a>
+              <a href="https://www.facebook.com/pages/Club-Del-Comercio-Oca%C3%B1a/499328823755733"><img src="https://images.vexels.com/media/users/3/223136/isolated/lists/984f500cf9de4519b02b354346eb72e0-icono-de-facebook-redes-sociales.png" alt="Facebook"></a>
+              <a href="https://www.instagram.com/clubcomercioocana/profilecard/?igsh=NW5ncmpzeDM4djY="><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/640px-Instagram_logo_2022.svg.png" alt="Instagram"></a>
             </div>
           </div>
 
@@ -190,54 +193,6 @@
           </div>
         </div>
       </footer>
-
-      <!-- <script>
-
-const btnLeft = document.querySelector(".btn-left"),
-    btnRight = document.querySelector(".btn-right"),
-    slider = document.querySelector("#slider"),
-    sliderSection = document.querySelectorAll(".slider-section");
-
-
-setInterval(() => {
-    moveToRight( )
-}, 4000);
-
-let operacion = 0;
-counter = 0,
-    widthImg = 100 / sliderSection.length;
-
-function moveToRight() {
-    if (counter >= sliderSection.length - 1) {
-        counter = 0;
-        operacion = 0;
-        slider.style.transform = `translate(-${operacion}%)`
-        slider.style.transition = "none";
-        return;
-    }
-    counter++;
-    operacion = operacion + widthImg;
-    slider.style.transform = `translate(-${operacion}%)`;
-    slider.style.transition = "all ease .6s"
-}
-
-function moveToLeft() {
-    counter--;
-    if (counter < 0) {
-        counter = sliderSection.length - 1;
-        operacion = widthImg * (sliderSection.length - 1)
-        slider.style.transform = `translate(-${operacion}%)`;
-        slider.style.transition = "none";
-        return;
-    }
-    operacion = operacion - widthImg;
-    slider.style.transform = `translate(-${operacion}%)`;
-    slider.style.transition = "all ease .6s"
-
-
-}
-
-      </script> -->
 
 </body>
 

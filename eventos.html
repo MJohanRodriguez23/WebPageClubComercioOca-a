@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Club del Comercio Ocaña</title>
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* HEADER */
+        .header {
+            background-color: #221552;
+            color: #FFFDFC;
+            padding: 20px 0;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #FFFDFC;
+            font-weight: 600;
+        }
+
+        .menu a:hover {
+            color: #3e288f;
+        }
+
+        /* SECCIÓN DE SERVICIOS */
+        .services-detail {
+            padding: 80px 0;
+            background-color: #f9fafc;
+        }
+
+        .services-detail h2 {
+            text-align: center;
+            font-size: 55px;
+            color: #323337;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+
+        .service {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .service img {
+            width: 40%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .service-description {
+            width: 55%;
+        }
+
+        .service-description h3 {
+            font-size: 30px;
+            color: #323337;
+            margin-bottom: 15px;
+        }
+
+        .service-description p {
+            font-size: 16px;
+            color: #414247;
+        }
+
+        .btn-1 {
+            display: inline-block;
+            padding: 11px 35px;
+            background-color: #221552;
+            color: #f9fafc;
+            text-transform: uppercase;
+            border-radius: 15px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .btn-1:hover {
+            background-color: #3e288f;
+        }
+
+        /* FOOTER */
+        .footer {
+            background-color: #1a1a2e;
+            color: #f0f0f0;
+            padding: 20px 0;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .footer-section h5 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .footer-section hr {
+            width: 50px;
+            height: 2px;
+            background-color: #f0f0f0;
+            border: none;
+            margin-bottom: 15px;
+        }
+
+        .footer-section p,
+        .footer-section ul {
+            font-size: 14px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer-section ul li a {
+            color: #f0f0f0;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery a img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+
+        /* Responsive para dispositivos móviles */
+        @media (max-width: 991px) {
+            .service {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .service img {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .service-description {
+                width: 100%;
+            }
+
+            .services-detail h2 {
+                font-size: 45px;
+            }
+
+            .btn-1 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Club del Comercio</a>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="#">Galería</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN DE SERVICIOS -->
+    <section class="services-detail">
+        <div class="container">
+            <h2>Eventos</h2>
+
+            <!-- evento matrimonios -->
+            <div class="service">
+                <img src="images/boda1.jpg" alt="Matrimonios" />
+                <div class="service-description">
+                    <h3>Matrimonios</h3>
+                    <p>
+                        Imagina una tarde mágica, donde el sol se va poniendo
+                         suavemente sobre el horizonte, y el cielo se tiñe de
+                          tonalidades rosadas y doradas. En este entorno idílico,
+                        dos almas se unen en un lazo eterno de amor y compromiso.
+                         La ceremonia se llevará a cabo en un jardín encantador,
+                          rodeado de flores exuberantes y árboles majestuosos que susurran con la brisa. 
+                    </p>
+                </div>
+            </div>
+
+            <!-- Halloween -->
+            <div class="service">
+                <img src="images/evento2.jpg" alt="Halloween" />
+                <div class="service-description">
+                    <h3>Evento de Halloween</h3>
+                    <p>
+                        En una noche oscura y misteriosa, la luna llena ilumina un escenario
+                         encantado donde las sombras cobran vida y los susurros del viento
+                          cuentan historias de fantasmas y hechicerías. El evento de Halloween
+                           se llevará a cabo en una mansión antigua, adornada con telarañas y
+                            calabazas talladas que emiten un brillo inquietante.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Servicio Piscina Pequeña -->
+            <div class="service">
+                <img src="images/evento3.jpg" alt="Torneo de tenis" />
+                <div class="service-description">
+                    <h3>Torneos de tenis</h3>
+                    <p>
+                        En un soleado día de verano, los mejores tenistas de la región se reúnen
+                         en un prestigioso club para competir en un emocionante torneo. Las canchas
+                          de tierra batida están preparadas a la perfección, listas para ser testigos
+                           de impresionantes saques, voleas y raquetazos que mantendrán a la audiencia
+                            al borde de sus asientos.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Servicio Bar -->
+            <div class="service">
+                <img src="images/evento4.jpg" alt="cumpleaños" />
+                <div class="service-description">
+                    <h3>Reservas para cumpleaños</h3>
+                    <p>
+                        ¡Celebra un cumpleaños inolvidable en nuestro encantador espacio de eventos!
+                         Nuestro lugar es perfecto para crear recuerdos especiales con amigos y familiares.
+                          Desde la decoración festiva hasta la deliciosa comida, nos aseguramos de que cada 
+                          detalle sea perfecto para tu celebración.
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- Agrega más servicios aquí según sea necesario -->
+            <a href="#" class="btn-1">Ver más detalles de servicios</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h5>CLUB DEL COMERCIO OCAÑA</h5>
+                <hr>
+                <p>Calle X # Y - Z<br>Ocaña, Norte de Santander<br>PBX: (+57) 316 810 8618</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61550799392922&mibextid=kFxxJD"><img
+                            src="https://images.vexels.com/media/users/3/223136/isolated/lists/984f500cf9de4519b02b354346eb72e0-icono-de-facebook-redes-sociales.png"
+                            alt="Facebook"></a>
+                    <a href="https://www.instagram.com/clubcomercioocana/profilecard/?igsh=NW5ncmpzeDM4djY="><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/640px-Instagram_logo_2022.svg.png"
+                            alt="Instagram"></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h5>MAPA DEL SITIO</h5>
+                <hr>
+                <ul>
+                    <li><a href="#">Acerca de Nosotros</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">El Club</a></li>
+                    <li><a href="#">Deportes</a></li>
+                    <li><a href="#">Hospedaje</a></li>
+                    <li><a href="#">Bodas</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h5>GALERÍA DE IMÁGENES</h5>
+                <hr>
+                <div class="gallery">
+                    <a href="#"><img src="images/slide1.jpeg" alt="Imagen 1"></a>
+                    <a href="#"><img src="images/slide2.jpeg" alt="Imagen 2"></a>
+                    <a href="#"><img src="images/slide3.jpeg" alt="Imagen 3"></a>
+                    <a href="#"><img src="images/service3.jpeg" alt="Imagen 4"></a>
+                    <a href="#"><img src="images/service2.jpeg" alt="Imagen 5"></a>
+                    <a href="#"><img src="images/slide2.jpeg" alt="Imagen 6"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
